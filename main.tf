@@ -11,7 +11,7 @@ resource "aws_instance" "ytzhak_cloud_server2" {
   count = 3
 
 lifecycle {
-  prevent_destroy = true
+  
   ignore_changes = ["ami",]
   }
 
